@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agencia de Coches</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agencia de Coches</h1>
+        </header>
+
+        <!-- Formulario para agregar un nuevo modelo de coche -->
+        <section id="addForm" class="form-container">
+            <h2>Agregar Nuevo Modelo</h2>
+            <form id="carForm">
+                <label for="modelName">Nombre del Modelo:</label>
+                <input type="text" id="modelName" required>
+
+                <label for="brand">Marca:</label>
+                <input type="text" id="brand" required>
+
+                <label for="year">Año de Fabricación:</label>
+                <input type="number" id="year" min="1900" max="2099" required>
+
+                <label for="price">Precio:</label>
+                <input type="number" id="price" min="0" required>
+
+                <label for="releaseDate">Fecha de Lanzamiento:</label>
+                <input type="date" id="releaseDate" required>
+
+                <button type="button" onclick="addModel()">Agregar Modelo</button>
+            </form>
+        </section>
+
+        <!-- Lista de modelos de coches -->
+        <section id="carList" class="list-container">
+            <h2>Lista de Modelos</h2>
+            <!-- Aquí se mostrará la lista de modelos -->
+        </section>
+
+        <!-- Botón para ir a la página de inicio de sesión -->
+
+        <button onclick={App.jsx}>inicio de sesión</button>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
